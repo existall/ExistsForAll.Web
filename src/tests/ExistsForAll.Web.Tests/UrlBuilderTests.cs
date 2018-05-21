@@ -12,12 +12,12 @@ namespace ExistsForAll.Web.Tests
         [Fact]
         public void UrlBuilder_WhenCasualUrl_PartsAreCorrect()
         {
-            const string url = "http://www.quali.com";
+            const string url = "http://www.google.com";
 
             var builder = new UrlBuilder(url);
 
             Assert.Equal("http", builder.Protocol);
-            Assert.Equal("www.quali.com", builder.Host);
+            Assert.Equal("www.google.com", builder.Host);
             Assert.Null(builder.Path);
             Assert.Equal(url, builder.ToString());
         }
